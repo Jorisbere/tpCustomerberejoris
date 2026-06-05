@@ -8,6 +8,10 @@ import com.mycustomer.tpcustomerberejoris.entity.Customer;
 import com.mycustomer.tpcustomerberejoris.entity.Discount;
 import com.mycustomer.tpcustomerberejoris.service.CustomerManager;
 import com.mycustomer.tpcustomerberejoris.service.DiscountManager;
+import jakarta.faces.component.UIComponent;
+import jakarta.faces.context.FacesContext;
+import jakarta.faces.convert.Converter;
+import jakarta.faces.convert.FacesConverter;
 import java.io.Serializable;
 import jakarta.inject.Inject;
 import jakarta.faces.view.ViewScoped;
@@ -68,4 +72,5 @@ public class CustomerDetailsBean implements Serializable {
     public List<Discount> getDiscounts() {
         return discountManager.getAllDiscounts();
     }
+
 }
